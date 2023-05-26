@@ -17,18 +17,7 @@ int main(){
 	ffoto=fopen("a.bmp","rb+");
 	faux=fopen("AUXILIAR","rb");
 
-	/*fseek(ffoto,2*sizeof(char),SEEK_SET);
 
-	fread(&tamano,sizeof(int),1,ffoto);
-	fseek(ffoto,10*sizeof(char),SEEK_SET);
-	fread(&inicioDatos,sizeof(int),1,ffoto);
-	fseek(ffoto,18*sizeof(char),SEEK_SET);
-	fread(&anchoImagen,sizeof(int),1,ffoto);
-	fseek(ffoto,22*sizeof(char),SEEK_SET);
-	fread(&altoImagen,sizeof(int),1,ffoto);
-	fseek(ffoto,28,SEEK_SET);
-	fread(&tamanopunto,sizeof(short int),1,ffoto);
-	*/
 	struct a pixels;
 	rewind(ffoto);
 	printf("%d",sizeof(pixels.pix));
